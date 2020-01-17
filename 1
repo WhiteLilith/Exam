@@ -1,0 +1,22 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+            string s, s2;
+            Console.Write("Введите строку, в которой необходимо произвести поиск: ");
+            s = Console.ReadLine();
+            Console.Write("Введите строку, поиск которой необходимо произвести: ");
+            s2 = Console.ReadLine();
+            int N = 0, len = s2.Length, upperBound = s.Length - len, i;
+            for (i = 0; i <= upperBound; i++)
+            {
+                if (s2 == s.Substring(i, len))
+                {
+                    N++;
+                }
+            }
+            Console.Write("Количество вхождений составляет: ");
+            Console.WriteLine(N);
+            Console.ReadKey();
+  }
+}
