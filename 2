@@ -1,0 +1,17 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+            string S;
+            Console.Write("Введите строку, в которой необходимо произвести поиск: ");
+            S = Console.ReadLine();
+            int len = S.Length, i;
+            char[] arr = S.ToCharArray();
+            for (i = 0; i <= len-1; i++)
+            {
+               Console.Write(arr[i]);
+               Console.Write(" ");
+            }
+            Console.ReadKey();
+  }
+}
