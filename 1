@@ -2,15 +2,15 @@ using System;
 
 class MainClass {
   public static void Main (string[] args) {
-            string s, s2;
+            string S, S0;
             Console.Write("Введите строку, в которой необходимо произвести поиск: ");
-            s = Console.ReadLine();
+            S = Console.ReadLine();
             Console.Write("Введите строку, поиск которой необходимо произвести: ");
-            s2 = Console.ReadLine();
-            int N = 0, len = s2.Length, upperBound = s.Length - len, i;
-            for (i = 0; i <= upperBound; i++)
+            S0 = Console.ReadLine();
+            int N = 0, len = S0.Length, UpIdx = S.Length - len, i;
+            for (i = 0; i <= UpIdx; i++)
             {
-                if (s2 == s.Substring(i, len))
+                if (S0 == S.Substring(i, len))
                 {
                     N++;
                 }
